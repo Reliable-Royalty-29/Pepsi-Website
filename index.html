@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pepsi Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="https://www.pepsi.com/en-us/" target="_blank"><img src="images/logo.png" class="logo"></a>
+        <ul>
+          <li><a href="https://reliable-royalty-29.github.io/Engineers/" target="_blank">Home</a></li>
+          <li><a href="https://reliable-royalty-29.github.io/windows11_clone/" target="_blank">Products</a></li>
+          <li><a href="https://reliable-royalty-29.github.io/funny_website/" target="_blank">What's New</a></li>
+          <li><a href="https://reliable-royalty-29.github.io/My_Portfolio/" target="_blank">My Portfolio</a></li>
+          <li><a href="mailto: dheemandas1997@gmail.com" target="_blank">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>That's What<br><span>I like</span></h2>
+          <p text="bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <a href="https://github.com/Reliable-Royalty-29"target="_blank" >View All Products</a>
+        </div>
+        <div class="imageBox">
+          <img src="images/pepsi001.png" class="pepsi">
+
+        </div>
+      </div>
+        <ul class="thumb">
+          <li><img src="images/pepsi001.png" onclick="imgSlider('images/pepsi001.png');changeBgColor('#0062be')"></li>
+          <li><img src="images/pepsi002.png" onclick="imgSlider('images/pepsi002.png');changeBgColor('#e60c2c')"></li>
+          <li><img src="images/pepsi003.png" onclick="imgSlider('images/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+          <li><a href="https://www.facebook.com/dheeman.das.14" target="_blank"><img src="images/facebook.png"></a></li>
+          <li><a href="https://www.instagram.com/engineer_memez_/" target="_blank"><img src="images/instagram.png"></a></li>
+          <li><a href="https://mobile.twitter.com/DheemanDas7" target="_blank"><img src="images/twitter.png"></a></li>
+        </ul>
+
+
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.pepsi').src = anything;
+      }
+      function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+      }
+
+    </script>
+  </body>
+</html>
